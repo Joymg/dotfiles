@@ -1,0 +1,15 @@
+# ~/.config/starship.toml
+format = """[](bold blue)$directory[](fg:blue bg:magenta)$git_branch$git_status[](fg:magenta bg:cyan)$nodejs$rust$golang$php[](fg:cyan) $character"""
+
+[directory]
+style = "bg:blue fg:black"
+format = "[$path ]($style)"
+
+[git_branch]
+symbol = "󰊢 "
+style = "bg:magenta fg:black"
+format = "[[ $symbol $branch ]($style)]($style)"
+
+[character]
+success_symbol = "[󰄛 ](bold green)"
+error_symbol = "[󰄛 ](bold red)"
