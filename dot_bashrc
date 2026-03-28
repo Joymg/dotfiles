@@ -1,0 +1,15 @@
+# ~/.bashrc
+
+# Load Nix environment
+[ -f "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ] && . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
+[ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ] && . "$HOME/.nix-profile/etc/profile.d/nix.sh"
+export PATH="$HOME/.local/bin:$PATH"
+
+# Load Prompt customization
+eval "$(starship init bash)"
+
+# Aliases
+alias v='nvim'
+alias lz='lazygit'
+alias lzd='lazydocker'
+alias cz='chezmoi'
