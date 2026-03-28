@@ -9,7 +9,7 @@ export PATH="$HOME/.local/bin:$PATH"
 eval "$(starship init bash)"
 
 # Aliases
-alias v='nvim'
-alias lz='lazygit'
-alias lzd='lazydocker'
+alias n='nvim'
+alias lg='lazygit'
+alias ld='lazydocker'
 alias cz='chezmoi'
