@@ -8,8 +8,5 @@ export PATH="$HOME/.local/bin:$PATH"
 # Load Prompt customization
 eval "$(starship init bash)"
 
-# Aliases
-alias n='nvim'
-alias lg='lazygit'
-alias ld='lazydocker'
-alias cz='chezmoi'
+# Load aliases
+[ -f "$HOME/.bash_aliases" ] && . "$HOME/.bash_aliases"
